@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import { useEffect } from "react";
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
-  const GA_TRACKING_ID = "5965230905"; // replace with your Google Analytics tracking ID
+  const GA_TRACKING_ID = "G-6Z6TBTKXMQ"; // replace with your Google Analytics tracking ID
 
   useEffect(() => {
     const handleRouteChange = (url) => {
