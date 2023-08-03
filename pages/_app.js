@@ -63,11 +63,8 @@ const App = ({ Component, pageProps }) => {
         strategy="afterInteractive"
         src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
       />
-      <script>
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-    <!-- Hotjar Tracking Code for https://integrations-ten.vercel.app/ -->
-    <script>
+      <Script strategy="afterInteractive">
+        {`
         (function(h,o,t,j,a,r){
             h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
             h._hjSettings={hjid:3599141,hjsv:6};
@@ -76,10 +73,8 @@ const App = ({ Component, pageProps }) => {
             r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
             a.appendChild(r);
         })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-    </script>
     `}
-        </Script>
-      </script>
+      </Script>
       <Component {...pageProps} />
     </>
   );
