@@ -9,6 +9,7 @@ function contactUs(props) {
         <input type="text" className=" border-red-500 border block" />
         <input type="password" className=" border-red-500 border block my-4" />
         <input type="email" className=" border-red-500 border block" />
+        <button>Submit</button>
       </form>
     </Layout>
   );
